@@ -8,10 +8,14 @@
   color: var(--color-text-opposite);
 }
 
+html {
+  box-sizing: border-box;
+}
+
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+  box-sizing: inherit;
   text-rendering: optimizeLegibility;
 }
 
@@ -30,9 +34,27 @@ a {
   cursor: pointer;
 }
 
-img {
-  width: 100%;
-  height: auto;
-  display: block;
+ul,
+ol {
+  list-style: none;
+  padding-left: 0;
+}
+
+img,
+iframe {
+  max-width: 100%;
+}
+
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+details>summary {
+  cursor: pointer;
   user-select: none;
 }

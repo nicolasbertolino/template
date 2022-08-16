@@ -1,7 +1,9 @@
 /* Base */
-@import "init.css";
-@import "variables.css";
+@import "base/base.css";
+@import "base/colors.css";
+@import "base/fonts.css";
+@import "base/variables.css";
 
 /* Components */
-@import "footer.css";
-@import "header.css";
+@import "components/footer.css";
+@import "components/header.css";

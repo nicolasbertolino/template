@@ -1,10 +1,11 @@
-class Footer extends HTMLElement {
-  constructor() {
-    super();
-  }
+export default function footer() {
+  class Footer extends HTMLElement {
+    constructor() {
+      super();
+    }
 
-  connectedCallback() {
-    this.innerHTML = `
+    connectedCallback() {
+      this.innerHTML = `
       <footer class="footer">
         <ul>
           <li><a href="about.html">About</a></li>
@@ -13,7 +14,8 @@ class Footer extends HTMLElement {
         </ul>
       </footer>
     `;
+    }
   }
-}
 
-customElements.define('footer-component', Footer);
+  customElements.define('footer-component', Footer);
+};

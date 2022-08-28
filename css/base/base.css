@@ -24,9 +24,9 @@ html {
 }
 
 body {
-  background-color: var(--color-background);
-  font-family: var(--font-family);
-  color: var(--color-text);
+  background-color: var(--color-background-primary);
+  font-family: var(--font-family-primary);
+  color: var(--color-text-primary);
 }
 
 a {

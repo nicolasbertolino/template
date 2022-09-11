@@ -1,14 +1,16 @@
 /* Components */
-import footerComponent from "../components/footer-component.js";
-import headerComponent from "../components/header-component.js";
+import footerComponent from "../views/components/footer-component.js";
+import headerComponent from "../views/components/header-component.js";
 
 /* Scripts */
 import footer from "./scripts/footer.js";
 import header from "./scripts/header.js";
+import main from "./scripts/main.js";
 
 document.addEventListener("DOMContentLoaded", function() {
   footer();
   footerComponent();
   header();
   headerComponent();
+  main();
 });

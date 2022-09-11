@@ -1,4 +1,4 @@
-export default function header() {
+export default function headerComponent() {
   class Header extends HTMLElement {
     constructor() {
       super();

@@ -1,4 +1,4 @@
-export default function headerComponent() {
+function init() {
   class Header extends HTMLElement {
     constructor() {
       super();
@@ -22,3 +22,5 @@ export default function headerComponent() {
 
   customElements.define('header-component', Header);
 };
+
+export default { init }

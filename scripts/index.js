@@ -6,7 +6,7 @@ import headerComponent from "../views/components/header-component.js";
 import footer from "./components/footer.js";
 import header from "./components/header.js";
 
-/* Scripts */
+/* Main */
 import main from "./main/main.js";
 
 if (document.readyState === "loading") {

@@ -1,12 +1,12 @@
 /* Base */
-@import "base/base";
-@import "base/colors";
-@import "base/fonts";
-@import "base/utilities";
+@use "base/base";
+@use "base/colors";
+@use "base/fonts";
+@use "base/utilities";
 
 /* Components */
-@import "components/footer";
-@import "components/header";
+@use "components/footer";
+@use "components/header";
 
 /* Main */
-@import "main/main";
+@use "main/main";

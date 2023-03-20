@@ -1,12 +1,12 @@
 /* Base */
-@use "base/base";
-@use "base/colors";
-@use "base/fonts";
-@use "base/utilities";
+@use 'base/base';
+@use 'base/colors';
+@use 'base/fonts';
+@use 'base/spacing';
 
 /* Components */
-@use "components/footer";
-@use "components/header";
+@use 'components/footer';
+@use 'components/header';
 
 /* Main */
-@use "main/main";
+@use 'main/main';

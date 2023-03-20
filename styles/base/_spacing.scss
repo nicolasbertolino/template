@@ -1,0 +1,31 @@
+:root {
+  --xxs: 4px;
+  --xs: 8px;
+  --s: 12px;
+  --m: 16px;
+  --l: 24px;
+  --xl: 28px;
+  --xxl: 36px;
+  --xxxl: 40px;
+
+  @media (min-width: 420px) {
+    --xxxl: 48px;
+  }
+
+  @media (min-width: 768px) {
+    --xxl: 40px;
+    --xxxl: 60px;
+  }
+
+  @media (min-width: 1024px) {
+    --xl: 32px;
+    --xxl: 52px;
+    --xxxl: 80px;
+  }
+
+  @media (min-width: 2180px) {
+    --xl: 44px;
+    --xxl: 68px;
+    --xxxl: 100px;
+  }
+}

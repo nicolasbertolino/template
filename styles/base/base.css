@@ -17,23 +17,19 @@ html {
 *::after {
   box-sizing: inherit;
   text-rendering: optimizeLegibility;
-}
 
-* {
-  margin: 0;
-}
-
-@media (prefers-reduced-motion: reduce) {
-
-  *,
-  *::before,
-  *::after {
+  @media (prefers-reduced-motion: reduce) {
     animation: none !important;
     transition: none !important;
     background-attachment: initial !important;
     scroll-behavior: auto !important;
   }
 }
+
+* {
+  margin: 0;
+}
+
 
 body {
   background-color: var(--color-background-primary);

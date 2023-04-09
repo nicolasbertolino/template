@@ -8,22 +8,22 @@
   --xxl: 36px;
   --xxxl: 40px;
 
-  @media (min-width: 420px) {
+  @media (420px <= width) {
     --xxxl: 48px;
   }
 
-  @media (min-width: 768px) {
+  @media (768px <= width) {
     --xxl: 40px;
     --xxxl: 60px;
   }
 
-  @media (min-width: 1024px) {
+  @media (1024px <= width) {
     --xl: 32px;
     --xxl: 52px;
     --xxxl: 80px;
   }
 
-  @media (min-width: 1440px) {
+  @media (1440px <= width) {
     --xl: 44px;
     --xxl: 68px;
     --xxxl: 100px;

@@ -23,6 +23,18 @@ html {
   margin: 0;
 }
 
+@media (prefers-reduced-motion: reduce) {
+
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+    background-attachment: initial !important;
+    scroll-behavior: auto !important;
+  }
+}
+
 body {
   background-color: var(--color-background-primary);
   font-family: var(--font-family-primary);

@@ -1,37 +1,12 @@
-/* Base */
-@import 'base/base.css';
-@import 'base/colors.css';
-@import 'base/fonts.css';
-@import 'base/spacing.css';
+@layer global, components, main;
 
-/* Components */
-@import 'components/footer.css';
-@import 'components/header.css';
+@import url('global/base.css') layer(global);
+@import url('global/colors.css') layer(global);
+@import url('global/fonts.css') layer(global);
+@import url('global/spacing.css') layer(global);
 
-/* Main */
-@import 'main/main.css';
-@keyframes fade-in {
-  from { opacity: 0; }
-}
+@import url('components/footer.css') layer(components);
+@import url('components/header.css') layer(components);
 
-@keyframes fade-out {
-  to { opacity: 0; }
-}
-
-@keyframes slide-from-right {
-  from { transform: translateX(30px); }
-}
-
-@keyframes slide-to-left {
-  to { transform: translateX(-30px); }
-}
-
-::view-transition-old(root) {
-  animation: 90ms cubic-bezier(0.4, 0, 1, 1) both fade-out,
-    300ms cubic-bezier(0.4, 0, 0.2, 1) both slide-to-left;
-}
-
-::view-transition-new(root) {
-  animation: 210ms cubic-bezier(0, 0, 0.2, 1) 90ms both fade-in,
-    300ms cubic-bezier(0.4, 0, 0.2, 1) both slide-from-right;
-}
+@import url('main/main.css') layer(main);
+@import url('main/layout.css') layer(main);

@@ -7,23 +7,31 @@
   --xl: 28px;
   --xxl: 36px;
   --xxxl: 40px;
+}
 
-  @media (420px <= width) {
+@media (420px <= width) {
+  :root {
     --xxxl: 48px;
   }
+}
 
-  @media (768px <= width) {
+@media (768px <= width) {
+  :root {
     --xxl: 40px;
     --xxxl: 60px;
   }
+}
 
-  @media (1024px <= width) {
+@media (1024px <= width) {
+  :root {
     --xl: 32px;
     --xxl: 52px;
     --xxxl: 80px;
   }
+}
 
-  @media (1440px <= width) {
+@media (1440px <= width) {
+  :root {
     --xl: 44px;
     --xxl: 68px;
     --xxxl: 100px;

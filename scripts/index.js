@@ -1,25 +1,22 @@
-/* Components */
-import footerComponent from '../views/components/footer-component.js';
-import headerComponent from '../views/components/header-component.js';
+/* View Components */
+import FooterView from '../views/components/footer-view.js';
+import HeaderView from '../views/components/header-view.js';
 
-/* Components Logic */
-import footer from './components/footer.js';
-import header from './components/header.js';
+/* Component Logic */
+import FooterController from './components/footer-controller.js';
+import HeaderController from './components/header-controller.js';
 
-/* Main */
-import main from './main/main.js';
+/* Main Logic */
+import MainController from './main/main-controller.js';
 
-if (document.readyState === 'loading') {
-  document.addEventListener('DOMContentLoaded', init);
-} else {
-  init();
-}
+const modules = [
+  FooterView,
+  FooterController,
+  HeaderView,
+  HeaderController,
+  MainController
+];
 
-function init() {
-  footerComponent.init();
-  footer.init();
-  headerComponent.init();
-  header.init();
-  main.init();
-}
-
+document.addEventListener('DOMContentLoaded', () => {
+  modules.forEach(module => module.init());
+});

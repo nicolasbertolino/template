@@ -1,12 +1,12 @@
-@layer global, components, main;
+@layer global, main, components;
+
+@import url('components/footer.css') layer(components);
+@import url('components/header.css') layer(components);
 
 @import url('global/base.css') layer(global);
 @import url('global/colors.css') layer(global);
 @import url('global/fonts.css') layer(global);
 @import url('global/spacing.css') layer(global);
 
-@import url('components/footer.css') layer(components);
-@import url('components/header.css') layer(components);
-
-@import url('main/main.css') layer(main);
 @import url('main/layout.css') layer(main);
+@import url('main/page.css') layer(main);

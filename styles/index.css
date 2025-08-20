@@ -6,6 +6,7 @@
 @import url('global/base.css') layer(global);
 @import url('global/colors.css') layer(global);
 @import url('global/fonts.css') layer(global);
+@import url('global/icons.css') layer(global);
 @import url('global/spacing.css') layer(global);
 
 @import url('main/layout.css') layer(main);

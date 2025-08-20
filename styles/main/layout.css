@@ -1,0 +1,9 @@
+.container {
+  display: grid;
+  grid-template-columns: minmax(2.5vw, 1fr) repeat(12, minmax(auto, 100px)) minmax(2.5vw, 1fr);
+  padding: clamp(40px, 5vw, 60px) 0;
+
+  > * {
+    grid-column: 2 / -2;
+  }
+}
